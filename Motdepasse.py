@@ -27,9 +27,9 @@ for char in range(1, nr_symbols + 1):
 for char in range(1, nr_numbers + 1):
     Mot_de_passe_liste += random.choice(numbers)
 
-# print(Mot_de_passe_liste)
+print(Mot_de_passe_liste)
 random.shuffle(Mot_de_passe_liste)
-# print(Mot_de_passe_liste)
+print(Mot_de_passe_liste)
 
 #j'initialise une variable pour recuperer tous les mots de passe
 Mot_de_depasse = ""
