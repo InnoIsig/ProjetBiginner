@@ -7,11 +7,11 @@ print("BIENVENU SUR MA PLATE-FORME CALCULATRICE\n")
 #Boucle While
 while True:
     #demande à l'utilisateur
-    nombre1 = int(input("Entrez le premier nombre\n"))
-    nombre2 = int(input("Entrez le deuxieme nombre\n"))
+    nombre1 = int(input("Entrez le premier nombre 👇\n"))
+    nombre2 = int(input("Entrez le deuxieme nombre 👇\n"))
 
 #Ici je cree le Menu qui doit permettre à l'utilisateur de choisir l'operateur qu'il a besoin d'utiliser
-    MENU = input("""Choisissez un opérateur au choix ci-dessous :
+    MENU = input("""Choisissez un opérateur au choix ci-dessous : 👇
     1. Addition
     2. Soustraction
     3. Multiplication

@@ -12,9 +12,9 @@ numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Bienvenu sur le Générateur du mot de passe !")
-nr_letters = int(input("Combien de lettre veux-tu pour le mot de pass ?\n")) 
-nr_symbols = int(input(f"Combien de symboles veux-tu ?\n"))
-nr_numbers = int(input(f"Combien de nombre veux-tu ?\n"))
+nr_letters = int(input("Combien de lettre veux-tu pour le mot de pass ? 👇\n")) 
+nr_symbols = int(input(f"Combien de symboles veux-tu ? 👇\n"))
+nr_numbers = int(input(f"Combien de nombre veux-tu ? 👇\n"))
 
 #Easy level
 Mot_de_passe = ""

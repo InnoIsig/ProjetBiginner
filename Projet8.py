@@ -9,9 +9,3 @@ elif map.isdigit():
 else:
     print("Vérification terminéé")
     
-    autre = input("Avez-vous besoin d'une autre nouvelle ? oui ou non")
-    if autre == "oui":
-        print("inscrivez-vous sur notre page cliquez ici 👇")
-        print("https://www.msn.com/fr-xl?ocid=wispr&pc=u477")
-    else:
-        print("Merci pour votre confiance")

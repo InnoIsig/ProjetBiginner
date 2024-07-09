@@ -23,7 +23,7 @@ def casar(commencez_texte, nombre_decalage, direction_chiffre):
 
 should_continu = True
 while should_continu:
-    direction = input("Type 'encoder' to encrypt, type 'decoder' to decrypt:\n")
+    direction = input("Type 'encoder' to encrypt, type 'decoder' to decrypt:👇\n")
     text = input("Tapez ton texte ici 👇:\n").lower()
     shift = int(input("Tapez le nombre de textes à décaler 👇:\n"))
 
