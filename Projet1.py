@@ -6,6 +6,8 @@ print("BIENVENU SUR MA PLATE-FORME CALCULATRICE\n")
 #Ici je crée une boucle infinie dont en chaque doit commencer à parcourir tous les codes qui sera en-dessous
 #Boucle While
 while True:
+    from logo2 import logo
+    print(logo)
     #demande à l'utilisateur
     nombre1 = int(input("Entrez le premier nombre 👇\n"))
     nombre2 = int(input("Entrez le deuxieme nombre 👇\n"))
