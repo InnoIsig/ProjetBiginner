@@ -28,29 +28,40 @@ operation ={
     "/": division
 }
 
-nombre_1 = int(input("Entrez le premier nombre\n"))
-nombre_2 = int(input("Entrez le deuxieme nombre\n"))
+def calculatrice():
+    nombre_1 = int(input("Entrez le premier nombre\n"))
+    for symbole in operation:
+            print(symbole)
 
-for symbole in operation:
-    print(symbole)
-operation_symbole = input("Choisissez entre les differents symbole ci-haut: ")
+    devrait_continuer = True
+    while devrait_continuer :
 
-calculation_fonction = operation[operation_symbole]
-reponse_1 = calculation_fonction(nombre_1, nombre_2)
+        operation_symbole = input("Choisissez entre les differents symbole ci-haut: ")
+        nombre_2 = int(input("Entrez le deuxieme nombre\n"))
+        calculation_fonction = operation[operation_symbole]
+        reponse = calculation_fonction(nombre_1, nombre_2)
+
+        print(f"{nombre_1} {operation_symbole} {nombre_2} = {reponse}")
+
+        if input(f"Tapez 'o' pour continuer à calculer avec {reponse} 'n' pour commencer une nouvelle calculatrice ") == "o":
+            nombre_1 = reponse
+        else:
+            devrait_continuer = False
+            calculatrice()
+
+calculatrice()
 
 
+# continu = input("Voulez-vous continuer à faire l'opération ? 'oui' ou 'non' ")
+# if continu == "oui":
+#     nombre_3 = int(input("Entrez le troisieme nombre\n"))
+#     operation_symbole = input("Choisissez un autre opérateur: ")
+#     calculation_fonction = operation[operation_symbole]
+#     reponse_2 = calculation_fonction(calculation_fonction (nombre_1, nombre_2), nombre_3)
 
-print(f"{nombre_1} {operation_symbole} {nombre_2} = {reponse_1}")
-continu = input("Voulez-vous continuer à faire l'opération ? 'oui' ou 'non' ")
-if continu == "oui":
-    nombre_3 = int(input("Entrez le troisieme nombre\n"))
-    operation_symbole = input("Choisissez un autre opérateur: ")
-    calculation_fonction = operation[operation_symbole]
-    reponse_2 = calculation_fonction(calculation_fonction (nombre_1, nombre_2), nombre_3)
-
-    print(f"{reponse_1} {operation_symbole} {nombre_3} = {reponse_2}")
-else:
-    print("Merci et bonne suite de temps")
+#     print(f"{reponse_1} {operation_symbole} {nombre_3} = {reponse_2}")
+# else:
+#     print("Merci et bonne suite de temps")
 
 
 
